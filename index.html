@@ -2,10 +2,16 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datenschutzerklärung</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
-    h1, h2 { color: #333; }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 0 20px; color: #333; }
+    h1 { color: #111; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    h2 { color: #222; margin-top: 30px; }
+    h3 { color: #444; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    .strong { font-weight: bold; }
   </style>
 </head>
 <body>
@@ -14,22 +20,25 @@
 
 <h2>1. Allgemeine Hinweise</h2>
 <p>
-Diese App verarbeitet personenbezogene Daten ausschließlich im Rahmen ihrer Funktion als Client für die Plattform „digitalesregister.it“.
-Der Schutz Ihrer Daten ist uns wichtig.
+Diese App verarbeitet personenbezogene Daten. Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (insbesondere der EU-Datenschutz-Grundverordnung, DSGVO) sowie dieser Datenschutzerklärung.
+</p>
+<p>
+Die App fungiert primär als Client für die Plattform „digitalesregister.it“. Sofern Daten an die Server der jeweiligen Schule übermittelt werden, ist die Schule der datenschutzrechtlich Verantwortliche. Für die in dieser Erklärung beschriebenen lokalen Verarbeitungen und integrierten Analysedienste gilt die nachfolgende Regelung.
 </p>
 
 <h2>2. Verantwortlicher</h2>
 <p>
-Tobias Bucci<br>
+Verantwortlich für die Datenverarbeitung in dieser App ist:<br>
+<span class="strong">Tobias Bucci</span><br>
 E-Mail: buccitobias774@gmail.com<br>
 Italien
 </p>
 
-<h2>3. Verarbeitete Daten</h2>
+<h2>3. Verarbeitete Daten und Rechtsgrundlagen</h2>
 
 <h3>3.1 Lokal gespeicherte Daten</h3>
 <p>
-Die App speichert folgende Daten lokal auf dem Gerät:
+Die App speichert folgende Daten lokal auf Ihrem Endgerät, um die Kernfunktionen bereitzustellen (Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung bzw. Bereitstellung der App-Funktion):
 </p>
 <ul>
   <li>Login-Daten (Benutzername, Passwort, Server-URL, mehrere Konten)</li>
@@ -40,9 +49,9 @@ Die App speichert folgende Daten lokal auf dem Gerät:
   <li>Technische Daten wie Logs und gespeicherte Benachrichtigungen</li>
 </ul>
 
-<h3>3.2 Datenübertragung</h3>
+<h3>3.2 Datenübertragung an die Schulplattform</h3>
 <p>
-Die App kommuniziert mit Servern der Plattform „digitalesregister.it“. Dabei werden unter anderem folgende Daten übertragen:
+Die App kommuniziert direkt mit den Servern der Plattform „digitalesregister.it“. Dabei werden zur Erfüllung des Dienstes folgende Daten übertragen:
 </p>
 <ul>
   <li>Login-Daten (Benutzername, Passwort)</li>
@@ -50,69 +59,81 @@ Die App kommuniziert mit Servern der Plattform „digitalesregister.it“. Dabei
   <li>Fachliche Daten wie Noten, Abwesenheiten, Nachrichten</li>
 </ul>
 
-<h3>3.3 Technische Informationen</h3>
+<h3>3.3 Analyse- und Diagnosedaten (Tracking)</h3>
 <p>
-Beim Zugriff können technische Informationen wie App-Version im User-Agent übertragen werden.
-Bei freiwilligen Fehlerberichten können zusätzlich Betriebssystem, Server-URL und Fehlertexte übermittelt werden.
+Um die App kontinuierlich zu verbessern und Fehler zu beheben, nutzen wir Analysedienste. <span class="strong">Diese Daten werden nur verarbeitet, wenn Sie beim ersten Start der App explizit Ihre Einwilligung erteilt haben</span> (Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO bzw. § 25 Abs. 1 TTDSG / geltendes nationales Recht zur Einwilligung). Die Einwilligung ist absolut freiwillig und kann jederzeit in den App-Einstellungen widerrufen werden.
 </p>
+<ul>
+  <li><span class="strong">Google Analytics für Firebase:</span> Erfasst anonymisierte Interaktionsdaten (z. B. App-Starts, Sitzungsdauer, geöffnete Seiten/Tabs, Button-Klicks). Die IP-Adresse wird dabei automatisch von Google anonymisiert.</li>
+  <li><span class="strong">Firebase Crashlytics:</span> Im Falle eines App-Absturzes werden anonyme Diagnoseinformationen (z. B. Gerätemodell, Betriebssystemversion, Zustand der App zum Zeitpunkt des Absturzes, Fehlerprotokoll) übermittelt, um den Fehler zu analysieren.</li>
+</ul>
 
 <h2>4. Zweck der Datenverarbeitung</h2>
 <p>
-Die Verarbeitung erfolgt zur Bereitstellung der App-Funktionen, insbesondere:
+Die Verarbeitung der Daten erfolgt zu folgenden Zwecken:
 </p>
 <ul>
   <li>Anzeige schulischer Informationen (z. B. Noten, Termine)</li>
-  <li>Verwaltung von Benutzerkonten</li>
-  <li>Synchronisation mit den Servern</li>
-  <li>Verbesserung der App durch Fehlerberichte</li>
+  <li>Verwaltung von Benutzerkonten und Multi-Account-Unterstützung</li>
+  <li>Synchronisation mit den Servern von digitalesregister.it</li>
+  <li>Stabilitätsoptimierung und Fehlerbehebung (über Crashlytics)</li>
+  <li>Anonyme Reichweitenmessung und Optimierung der App-Inhalte (über Google Analytics)</li>
 </ul>
 
-<h2>5. Drittanbieter</h2>
+<h2>5. Drittanbieter und Übermittlung in Drittstaaten</h2>
 <p>
-Die App verwendet keine Tracking- oder Analyse-Dienste wie Firebase, Google Analytics oder Werbung.
-</p>
-<p>
-Externe Dienste können jedoch genutzt werden:
+Im Rahmen der App-Nutzung werden Dienste von Drittanbietern eingesetzt. Dabei kann es zu einer Übermittlung von Daten in ein Drittland (insbesondere die USA) kommen. Google stellt durch Standardvertragsklauseln der EU-Kommission und das EU-US Data Privacy Framework sicher, dass das europäische Datenschutzniveau eingehalten wird.
 </p>
 <ul>
-  <li>Server der jeweiligen Schule (digitalesregister.it)</li>
-  <li>Google Forms (für Feedback/Fehlerberichte)</li>
-  <li>PayPal (für freiwillige Spenden)</li>
+  <li><span class="strong">Google Ireland Limited</span> (Gordon House, Barrow Street, Dublin 4, Irland): Für die Dienste <span class="italic">Google Analytics für Firebase</span>, <span class="italic">Firebase Crashlytics</span> sowie die <span class="italic">Google User Messaging Platform (UMP)</span> zur Verwaltung Ihrer Datenschutzeinstellungen.</li>
+  <li><span class="strong">Server der jeweiligen Schule</span> (digitalesregister.it)</li>
+  <li><span class="strong">Google Forms</span> (sofern Sie freiwillig Feedback oder manuelle Fehlerberichte einreichen)</li>
+  <li><span class="strong">PayPal</span> (sofern Sie freiwillig eine Spende tätigen)</li>
 </ul>
 
-<h2>6. Speicherung der Daten</h2>
+<h2>6. Speicherung und Löschung der Daten</h2>
 <p>
-Daten werden sowohl lokal auf dem Gerät als auch auf den Servern der jeweiligen Schule gespeichert.
+Die lokal auf dem Gerät gecachten Daten und Login-Daten werden gelöscht, sobald Sie sich aus dem jeweiligen Konto in der App abmelden oder die App von Ihrem Gerät deinstallieren. Die über Firebase Analytics und Crashlytics erfassten Daten werden gemäß den Standardaufbewahrungsfristen von Google (in der Regel 14 Monate) automatisch gelöscht.
 </p>
 
-<h2>7. Berechtigungen</h2>
+<h2>7. App-Berechtigungen</h2>
 <p>
-Die App benötigt folgende Berechtigungen:
+Damit die App ordnungsgemäß funktioniert, fordert sie folgende Berechtigungen an:
 </p>
 <ul>
-  <li>Internetzugriff</li>
-  <li>Benachrichtigungen</li>
-  <li>Speicherzugriff für Downloads</li>
+  <li><span class="strong">Internetzugriff:</span> Erforderlich, um Daten von der Schulplattform zu laden und Analysedaten (falls eingewilligt) zu übertragen.</li>
+  <li><span class="strong">Benachrichtigungen:</span> Erforderlich, um Sie über neue Noten, Mitteilungen oder Abwesenheiten zu informieren.</li>
+  <li><span class="strong">Speicherzugriff:</span> Erforderlich, um von Lehrpersonen bereitgestellte Dateien auf Ihr Gerät herunterzuladen.</li>
 </ul>
 <p>
-Es erfolgt keine Nutzung von Kamera, Mikrofon, Standort oder Kontakten.
+Sensible Berechtigungen wie Kamera, Mikrofon, genauer Standort oder Kontakte werden von dieser App <span class="strong">nicht</span> angefordert oder genutzt.
 </p>
 
-<h2>8. Zielgruppe</h2>
+<h2>8. Schutz von Minderjährigen</h2>
 <p>
-Die App richtet sich an Schüler und Eltern und kann auch von Personen unter 13 Jahren genutzt werden.
+Da sich diese App an Schülerinnen und Schüler richtet, richtet sie sich naturgemäß auch an Personen unter 13 bzw. 16 Jahren. Das integrierte Consent-System (Google UMP) berücksichtigt die gesetzlichen Vorgaben zur Einholung von Einwilligungen bei Minderjährigen im EU-Raum. Es werden keine personalisierten Werbeprofile erstellt.
 </p>
 
-<h2>9. Ihre Rechte</h2>
+<h2>9. Ihre Rechte (Betroffenenrechte)</h2>
 <p>
-Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten.
-Bitte wenden Sie sich hierfür an den jeweiligen Betreiber des Schulservers.
+Nach der DSGVO stehen Ihnen folgende Rechte bezüglich Ihrer verarbeiteten Daten zu:
+</p>
+<ul>
+  <li><span class="strong">Recht auf Auskunft (Art. 15 DSGVO):</span> Sie können Auskunft über Ihre von uns verarbeiteten Daten verlangen.</li>
+  <li><span class="strong">Recht auf Berichtigung (Art. 16 DSGVO) und Löschung (Art. 17 DSGVO):</span> Sie können die Korrektur falscher Daten oder die Löschung Ihrer Daten verlangen (lokal durch Abmeldung/Deinstallation jederzeit möglich).</li>
+  <li><span class="strong">Recht auf Widerruf (Art. 7 Abs. 3 DSGVO):</span> Sie können eine einmal erteilte Einwilligung zum Tracking jederzeit in den App-Einstellungen mit Wirkung für die Zukunft widerrufen.</li>
+  <li><span class="strong">Beschwerderecht (Art. 77 DSGVO):</span> Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt.</li>
+</ul>
+<p>
+Für Daten, die auf den Servern der Schule liegen (Noten, Abwesenheiten etc.), wenden Sie sich zur Wahrnehmung Ihrer Rechte bitte direkt an die Schulleitung bzw. den Betreiber des Schulservers. Für die App-spezifischen Daten können Sie sich an die in Abschnitt 2 genannte E-Mail-Adresse wenden.
 </p>
 
-<h2>10. Änderungen</h2>
+<h2>10. Änderungen dieser Datenschutzerklärung</h2>
 <p>
-Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden.
+Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Dienste in der Datenschutzerklärung umzusetzen (z. B. bei der Einführung neuer Funktionen).
 </p>
+
+<p>Stand: Mai 2026</p>
 
 </body>
 </html>
