@@ -1,102 +1,186 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Digitales Register – Konto löschen</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontolöschung und Datenlöschung für Digitales Register" />
+  <title>Digitales Register – Konto und Daten löschen</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 860px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #222;
-      padding: 0 16px;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    .box {
-      background: #f6f6f6;
-      border: 1px solid #ddd;
-      padding: 16px;
-      border-radius: 8px;
-    }
+    :root{--bg:#f5f7fb;--surface:#fff;--text:#1f2937;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--warn:#fff7ed;--warn-border:#fed7aa;--shadow:0 8px 28px rgba(15,23,42,.07);--radius:18px}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+    main{width:min(900px,calc(100% - 32px));margin:48px auto;padding:42px 46px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    h1{margin-top:0;line-height:1.2}h2{margin-top:38px;line-height:1.3}p{margin:0 0 16px}li{margin:6px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .box,.notice,.warning{margin:18px 0;padding:18px 20px;border:1px solid var(--border);border-radius:14px;background:#fafafa}.notice{background:var(--soft);border-color:#dbeafe}.warning{background:var(--warn);border-color:var(--warn-border)}.muted{color:var(--muted)}
+    @media(max-width:680px){main{width:min(100% - 20px,900px);margin:20px auto;padding:26px 22px;border-radius:14px}}
+    @media print{body{background:#fff}main{width:100%;margin:0;border:0;box-shadow:none}}
   </style>
 </head>
 <body>
+<main>
+  <h1>Digitales Register – Konto und Daten löschen</h1>
 
-<h1>Digitales Register – Antrag auf Löschung des Kontos</h1>
+  <p>
+    Diese Seite beschreibt, wie Nutzer von <strong>Digitales Register</strong> die Löschung
+    von Daten beantragen und lokale App-Daten entfernen können. Sie gilt für Android, iOS
+    und Microsoft Windows, soweit die jeweilige App-Version verteilt wird.
+  </p>
 
-<p>
-Diese Seite beschreibt, wie Nutzer der App <strong>Digitales Register</strong> die Löschung ihres Kontos und der zugehörigen Daten beantragen können.
-Verantwortlich für diese Seite ist <strong>Tobias Bucci</strong>.
-</p>
+  <div class="notice">
+    <strong>Wichtig:</strong>
+    Digitales Register ist in der Regel ein Client für ein Konto, das von einer Schule,
+    Bildungseinrichtung oder dem zugehörigen Schulserver verwaltet wird. Der Betreiber
+    der App erstellt daher grundsätzlich kein eigenständiges Schulkonto, über das er frei
+    verfügen kann. Das Löschen der App oder lokaler App-Daten löscht nicht automatisch
+    das Konto auf dem Schulserver.
+  </div>
 
-<h2>1. So beantragst du die Löschung deines Kontos</h2>
-<div class="box">
-  <ol>
-    <li>Sende eine E-Mail an <strong>buccitobias774@gmail.com</strong>.</li>
-    <li>Verwende im Betreff möglichst: <strong>Konto löschen – Digitales Register</strong>.</li>
-    <li>Gib in der Nachricht folgende Angaben an:
-      <ul>
-        <li>deinen Benutzernamen</li>
-        <li>den Namen der Schule</li>
-        <li>die Server-URL oder den Schulserver, sofern bekannt</li>
-      </ul>
-    </li>
-    <li>Dein Antrag wird geprüft und an die zuständige Stelle weitergeleitet, sofern das Konto von einem Schulserver verwaltet wird.</li>
-  </ol>
-</div>
+  <h2>1. Löschanfrage an den App-Betreiber</h2>
+  <div class="box">
+    <ol>
+      <li>
+        Sende eine E-Mail an
+        <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>.
+      </li>
+      <li>
+        Verwende als Betreff möglichst:
+        <strong>„Daten löschen – Digitales Register“</strong>.
+      </li>
+      <li>
+        Beschreibe möglichst knapp, welche Daten bzw. welches Konto betroffen sind.
+        Falls zur Zuordnung erforderlich, kannst du den <strong>Benutzernamen</strong>,
+        den <strong>Namen der Schule</strong> und/oder den <strong>Schulserver</strong> angeben.
+      </li>
+    </ol>
+  </div>
 
-<h2>2. Wichtiger Hinweis zur Kontoverwaltung</h2>
-<p>
-Die App <strong>Digitales Register</strong> fungiert als Client für die Plattform <strong>digitalesregister.it</strong>.
-Benutzerkonten und fachliche Daten werden in der Regel von der jeweiligen Schule bzw. dem zugehörigen Schulserver verwaltet.
-Deshalb kann die endgültige Kontolöschung davon abhängen, dass die zuständige Schule oder der jeweilige Serverbetreiber die Löschung bestätigt und durchführt.
-</p>
+  <div class="warning">
+    <strong>Bitte niemals per E-Mail senden:</strong>
+    Passwort, Zugangstoken, Session-Cookies, einzelne Noten, Nachrichteninhalte,
+    Abwesenheitsgründe, Gesundheitsinformationen oder andere vertrauliche Schulinhalte.
+    Falls weitere Angaben zur Identitätsprüfung erforderlich sind, werden diese gesondert angefordert.
+  </div>
 
-<h2>3. Welche Daten gelöscht werden</h2>
-<p>
-Nach erfolgreicher Bearbeitung des Löschantrags sollen – soweit technisch und organisatorisch möglich – folgende mit dem Konto verbundenen Daten gelöscht werden:
-</p>
-<ul>
-  <li>Kontodaten wie Benutzername, Profilname und E-Mail-Adresse</li>
-  <li>lokal gespeicherte Zugangsdaten innerhalb der App</li>
-  <li>lokal gespeicherte Cache-Daten der App</li>
-  <li>lokal gespeicherte Einstellungen und Präferenzen</li>
-</ul>
+  <h2>2. Was der App-Betreiber selbst löschen kann</h2>
+  <p>
+    Soweit Daten vom Betreiber von Digitales Register selbst kontrolliert oder lokal in der App
+    verarbeitet werden, können je nach technischer Zuordenbarkeit insbesondere folgende Daten
+    Gegenstand einer Löschung sein:
+  </p>
+  <ul>
+    <li>lokale Kontokonfigurationen;</li>
+    <li>lokal gespeicherte Zugangsdaten bzw. Sitzungselemente;</li>
+    <li>lokale Cache-Daten;</li>
+    <li>lokale Einstellungen und Präferenzen;</li>
+    <li>lokal gespeicherte Datenschutz- und Einwilligungseinstellungen;</li>
+    <li>lokale pseudonyme Analytics-Zustände bzw. Kennungen, soweit technisch unterstützt;</li>
+    <li>sonstige personenbezogene Daten, die der App-Betreiber selbst kontrolliert und eindeutig zuordnen kann.</li>
+  </ul>
 
-<h2>4. Welche Daten möglicherweise aufbewahrt werden</h2>
-<p>
-Bestimmte Daten können aufgrund technischer, organisatorischer oder rechtlicher Anforderungen vorübergehend weiter gespeichert bleiben, insbesondere:
-</p>
-<ul>
-  <li>Serverdaten, die von der jeweiligen Schule oder dem Schulserver verwaltet werden</li>
-  <li>Nachweise über die Bearbeitung der Löschanfrage</li>
-  <li>technische Protokolle, soweit dies zur Fehleranalyse oder Missbrauchsprävention erforderlich ist</li>
-</ul>
+  <h2>3. Daten und Konten auf dem Schulserver</h2>
+  <p>
+    Benutzerkonten, offizielle Noten, Abwesenheiten, Stundenpläne, Nachrichten und andere
+    schulische Datensätze werden in der Regel von der jeweiligen Schule, Bildungseinrichtung
+    oder dem zugehörigen Serverbetreiber verwaltet.
+  </p>
+  <p>
+    Ist die Schule bzw. der Serverbetreiber für diese Daten verantwortlich, kann der Betreiber
+    von Digitales Register die endgültige Löschung dort nicht selbst durchführen. In diesem Fall
+    wird der Nutzer an die zuständige Stelle verwiesen bzw. gebeten, die Schule direkt zu kontaktieren.
+  </p>
 
-<h2>5. Aufbewahrungsdauer</h2>
-<p>
-Anfragen zur Kontolöschung werden in der Regel innerhalb von <strong>7 Tagen</strong> bearbeitet.
-Falls Daten aufgrund technischer oder organisatorischer Gründe nicht sofort gelöscht werden können, können sie noch für einen begrenzten Zeitraum aufbewahrt werden.
-Soweit keine längere Aufbewahrung erforderlich ist, werden solche Restdaten spätestens innerhalb von <strong>30 Tagen nach Bearbeitung der Anfrage</strong> gelöscht oder nicht weiter verwendet.
-</p>
+  <h2>4. Lokale Daten auf Android, iOS und Windows entfernen</h2>
+  <p>Lokale App-Daten können zusätzlich wie folgt entfernt werden:</p>
+  <ul>
+    <li>in der App vom betroffenen Konto abmelden bzw. vorhandene lokale Löschfunktionen verwenden;</li>
+    <li>die App-Daten über die Einstellungen des Betriebssystems löschen, soweit die Plattform dies unterstützt;</li>
+    <li>die App deinstallieren.</li>
+  </ul>
+  <p>
+    Dateien, die ausdrücklich in einen Download-, Dokumenten- oder anderen benutzerzugänglichen
+    Ordner gespeichert wurden, können nach dem Abmelden oder Deinstallieren bestehen bleiben und
+    müssen gegebenenfalls manuell gelöscht werden.
+  </p>
 
-<h2>6. Lokale Daten auf dem Gerät entfernen</h2>
-<p>
-Zusätzlich zur Kontolöschung können Nutzer lokal auf dem Gerät gespeicherte Daten entfernen, indem sie sich aus der App abmelden und die App deinstallieren.
-Heruntergeladene Dateien im Download- oder Dokumentenordner des Geräts müssen gegebenenfalls manuell gelöscht werden.
-</p>
+  <h2>5. Analytics, akademische Statistiken und Crashlytics</h2>
+  <p>
+    Optionales Firebase Analytics, akademische Statistiken und Firebase Crashlytics sind an getrennte
+    Einwilligungen gekoppelt und sollen ohne gültige Einwilligung nicht erhoben werden.
+  </p>
+  <p>
+    Beim Widerruf von Analytics wird die App so konfiguriert, dass zukünftige optionale Analytics-
+    Erfassung gestoppt, die App-seitig gesetzte Analytics-User-ID entfernt und lokale Analytics-
+    Zustände soweit unterstützt zurückgesetzt werden. Beim Widerruf akademischer Statistiken werden
+    zukünftige akademische Statistikereignisse und der interne Schul-Analytics-Kontext deaktiviert.
+    Beim Widerruf von Crashlytics wird die zukünftige Crashlytics-Erfassung deaktiviert und es werden,
+    soweit unterstützt, noch nicht gesendete lokale Berichte gelöscht.
+  </p>
+  <p>
+    Ein Widerruf löscht jedoch <strong>nicht automatisch rückwirkend</strong> alle bereits an einen
+    Dienstleister übertragenen Daten.
+  </p>
+  <p>
+    Analytics-Daten werden pseudonym verarbeitet. Da die Analytics-Kennung bewusst nicht aus Name,
+    E-Mail oder Schul-Benutzername gebildet wird, kann es in bestimmten Fällen technisch nicht möglich
+    sein, bereits übertragene pseudonyme Daten allein anhand des Namens einer Person eindeutig zu finden.
+    Soweit eine eindeutige Zuordnung möglich und eine Löschung rechtlich erforderlich ist, wird die
+    Löschanfrage entsprechend bearbeitet.
+  </p>
 
-<h2>7. Kontakt</h2>
-<p>
-Bei Fragen zur Kontolöschung:
-<br>
-<strong>Tobias Bucci</strong>
-<br>
-E-Mail: <strong>buccitobias774@gmail.com</strong>
-</p>
+  <h2>6. Aufbewahrungsfristen</h2>
+  <p>
+    Für Google Analytics ist eine Aufbewahrungsdauer von <strong>14 Monaten</strong> für die
+    entsprechenden nutzer- und ereignisbezogenen Daten konfiguriert.
+  </p>
+  <p>
+    Analytics-Ereignisdaten können zusätzlich täglich in ein BigQuery-Dataset in der
+    <strong>Europäischen Union</strong> exportiert werden. Dieser Export hat technisch eine eigene
+    Aufbewahrungskonfiguration. Die Aufbewahrungspolitik des App-Betreibers für diese exportierten
+    Analytics-Ereignisdaten beträgt maximal <strong>14 Monate</strong>.
+  </p>
+  <p>
+    Google gibt für Firebase Crashlytics an, Crash-Stacktraces, verarbeitete Crash-/Minidump-Daten
+    und zugehörige Kennungen für <strong>90 Tage</strong> aufzubewahren, bevor die Entfernung aus
+    aktiven und Backup-Systemen eingeleitet wird.
+  </p>
+  <p>
+    Für Daten auf Schul- oder Institutionsservern gelten die Aufbewahrungsfristen der jeweils
+    verantwortlichen Schule bzw. des jeweiligen Dienstanbieters.
+  </p>
 
+  <h2>7. Bearbeitungsfrist für Datenschutzanfragen</h2>
+  <p>
+    Datenschutzanfragen werden ohne unangemessene Verzögerung bearbeitet. Soweit die DSGVO anwendbar
+    ist, erhält die betroffene Person grundsätzlich spätestens innerhalb eines Monats nach Eingang
+    der Anfrage Informationen über die ergriffenen Maßnahmen.
+  </p>
+  <p>
+    Wenn dies aufgrund der Komplexität oder Anzahl der Anfragen erforderlich ist, kann diese Frist
+    nach Art. 12 Abs. 3 DSGVO um bis zu zwei weitere Monate verlängert werden. Über eine solche
+    Verlängerung und deren Gründe wird innerhalb des ersten Monats informiert.
+  </p>
+
+  <h2>8. Minderjährige</h2>
+  <p>
+    Für die optionalen einwilligungsbasierten Analytics-, Diagnose- und akademischen Statistikzwecke
+    verwendet die App in Italien eine Altersgrenze von <strong>14 Jahren</strong>.
+    Ist der Nutzer unter 14 oder ist der Altersstatus unbekannt, bleiben diese optionalen Zwecke
+    deaktiviert, solange kein geeigneter Eltern-/Erziehungsberechtigtenprozess angeboten wird.
+  </p>
+  <p>
+    Diese Regel betrifft die optionalen einwilligungsbasierten Zwecke der App und bedeutet nicht,
+    dass jede Verarbeitung schulischer Daten einer Person unter 14 Jahren unzulässig wäre.
+  </p>
+
+  <h2>9. Kontakt</h2>
+  <p>
+    <strong>Tobias Bucci</strong><br />
+    Mühlenweg 51, St. Sigmund<br />
+    39030 Kiens (BZ), Italien<br /><br />
+    E-Mail:
+    <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
+  </p>
+
+  <p class="muted">Stand: 1. Oktober 2026 · Datenschutzversion 4</p>
+</main>
 </body>
 </html>
