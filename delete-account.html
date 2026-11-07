@@ -21,8 +21,8 @@
 
   <p>
     Diese Seite beschreibt, wie Nutzer von <strong>Digitales Register</strong> die Löschung
-    von Daten beantragen und lokale App-Daten entfernen können. Sie gilt für Android, iOS
-    und Microsoft Windows, soweit die jeweilige App-Version verteilt wird.
+    von Daten beantragen und lokale App-Daten entfernen können. Sie gilt für Android, iOS,
+    Microsoft Windows und Linux, soweit die jeweilige App-Version verteilt wird.
   </p>
 
   <div class="notice">
@@ -88,7 +88,7 @@
     wird der Nutzer an die zuständige Stelle verwiesen bzw. gebeten, die Schule direkt zu kontaktieren.
   </p>
 
-  <h2>4. Lokale Daten auf Android, iOS und Windows entfernen</h2>
+  <h2>4. Lokale Daten auf dem Gerät entfernen</h2>
   <p>Lokale App-Daten können zusätzlich wie folgt entfernt werden:</p>
   <ul>
     <li>in der App vom betroffenen Konto abmelden bzw. vorhandene lokale Löschfunktionen verwenden;</li>
@@ -129,18 +129,22 @@
   <h2>6. Aufbewahrungsfristen</h2>
   <p>
     Für Google Analytics ist eine Aufbewahrungsdauer von <strong>14 Monaten</strong> für die
-    entsprechenden nutzer- und ereignisbezogenen Daten konfiguriert.
+    entsprechenden nutzer- und ereignisbezogenen Daten eingestellt, mit Verlängerung bei neuer Aktivität.
   </p>
   <p>
     Analytics-Ereignisdaten können zusätzlich täglich in ein BigQuery-Dataset in der
-    <strong>Europäischen Union</strong> exportiert werden. Dieser Export hat technisch eine eigene
-    Aufbewahrungskonfiguration. Die Aufbewahrungspolitik des App-Betreibers für diese exportierten
-    Analytics-Ereignisdaten beträgt maximal <strong>14 Monate</strong>.
+    <strong>Europäischen Union</strong> exportiert werden. Diese Daten werden spätestens nach
+    <strong>14 Monaten</strong> gelöscht.
   </p>
   <p>
     Google gibt für Firebase Crashlytics an, Crash-Stacktraces, verarbeitete Crash-/Minidump-Daten
     und zugehörige Kennungen für <strong>90 Tage</strong> aufzubewahren, bevor die Entfernung aus
     aktiven und Backup-Systemen eingeleitet wird.
+  </p>
+  <p>
+    Beim Mitteilungsserver gibt es kein Konto und nichts, das einer Person zugeordnet ist. Abfragen
+    von App-Mitteilungen werden im Normalbetrieb nicht gespeichert. Einträge im Systemprotokoll nach
+    einem Serverfehler werden spätestens nach <strong>15 Tagen</strong> gelöscht.
   </p>
   <p>
     Für Daten auf Schul- oder Institutionsservern gelten die Aufbewahrungsfristen der jeweils
@@ -161,14 +165,9 @@
 
   <h2>8. Minderjährige</h2>
   <p>
-    Für die optionalen einwilligungsbasierten Analytics-, Diagnose- und akademischen Statistikzwecke
-    verwendet die App in Italien eine Altersgrenze von <strong>14 Jahren</strong>.
-    Ist der Nutzer unter 14 oder ist der Altersstatus unbekannt, bleiben diese optionalen Zwecke
-    deaktiviert, solange kein geeigneter Eltern-/Erziehungsberechtigtenprozess angeboten wird.
-  </p>
-  <p>
-    Diese Regel betrifft die optionalen einwilligungsbasierten Zwecke der App und bedeutet nicht,
-    dass jede Verarbeitung schulischer Daten einer Person unter 14 Jahren unzulässig wäre.
+    Die App fragt kein Alter ab. Alle optionalen Zwecke sind aus, bis jemand sie einschaltet.
+    Löschanfragen für Minderjährige können auch Eltern oder Erziehungsberechtigte stellen.
+    Einzelheiten stehen in der <a href="de.html">Datenschutzerklärung</a>.
   </p>
 
   <h2>9. Kontakt</h2>
@@ -180,7 +179,7 @@
     <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
   </p>
 
-  <p class="muted">Stand: 1. Oktober 2026 · Datenschutzversion 4</p>
+  <p class="muted">Stand: 7. November 2026 · Datenschutzversion 5 · <a href="de.html">Datenschutzerklärung</a></p>
 </main>
 </body>
 </html>

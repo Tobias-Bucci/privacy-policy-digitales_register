@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for Digitales Register" />
+  <meta name="description" content="Privacy Policy for the app Digitales Register" />
   <title>Privacy Policy – Digitales Register</title>
   <style>
     :root{--bg:#f5f7fb;--surface:#fff;--text:#1f2937;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--shadow:0 8px 28px rgba(15,23,42,.07);--radius:18px}
@@ -15,6 +15,8 @@
     .muted{color:var(--muted)}.footer{margin-top:22px;padding:10px 4px 0;color:var(--muted);text-align:center;font-size:14px}
     @media(max-width:680px){.page{width:min(100% - 20px,980px);margin:20px auto}.hero,.content{padding:26px 22px;border-radius:14px}}
     @media print{body{background:#fff}.page{width:100%;margin:0}.hero,.content{box-shadow:none;border:none}}
+    .languages{display:flex;flex-wrap:wrap;gap:4px 16px;margin:16px 0 0;padding:0;list-style:none}.languages a[aria-current]{font-weight:700;color:var(--text)}
+    code{overflow-wrap:anywhere}
   </style>
 </head>
 <body>
@@ -22,154 +24,147 @@
   <header class="hero">
     <span class="eyebrow">Digitales Register</span>
     <h1>Privacy Policy</h1>
-    <p class="muted">For Android, iOS and Microsoft Windows · Privacy version 4 · Effective 1 October 2026</p>
+    <p class="muted">For Android, iOS, Microsoft Windows and Linux · Privacy version 5 · Effective 7 November 2026</p>
+    <nav aria-label="Language">
+      <ul class="languages">
+      <li><a href="index.html" lang="en" aria-current="page">English</a></li>
+      <li><a href="de.html" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="it.html" lang="it" hreflang="it">Italiano</a></li>
+      <li><a href="lld.html" lang="lld" hreflang="lld">Ladin</a></li>
+      </ul>
+    </nav>
   </header>
 
   <article class="content">
     <h2>1. Scope</h2>
-    <p>This Privacy Policy explains how personal data is processed when using <strong>Digitales Register</strong> ("App"). It covers Android, iOS and Microsoft Windows builds where the respective build is distributed and supported.</p>
-    <p>The App primarily acts as a client for educational services available through <strong>digitalesregister.it</strong> and/or infrastructure operated by the relevant educational institution or service provider. Processing independently performed on those institutional systems remains subject to the responsibilities and privacy information of the relevant institution or provider.</p>
+    <p>This Privacy Policy explains how personal data is processed when you use the app <strong>Digitales Register</strong> (also published as “Schulregister Südtirol”; “App”). It covers the builds for Android, iOS, Microsoft Windows and Linux. The website and the server have their own <a href="https://www.digitalesregister.com/datenschutz/en/" rel="noopener noreferrer">privacy policy</a> and <a href="https://www.digitalesregister.com/impressum/en/" rel="noopener noreferrer">legal notice</a>.</p>
+    <p>The App is a client for the school register at <strong>digitalesregister.it</strong>. Register data travels directly between your device and the register of your school. The App’s operator has no server for this data and does not receive it.</p>
 
     <h2>2. Controller</h2>
-    <div class="card">
-      <strong>Tobias Bucci</strong><br />
+    <div class="card"><strong>Tobias Bucci</strong><br />
       Mühlenweg 51, St. Sigmund<br />
       39030 Kiens (BZ), Italy<br /><br />
-      Email: <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
-    </div>
-    <p>Where an educational institution independently determines the purposes and means of processing official school data stored on its systems, that institution is responsible for that processing.</p>
+      Email: <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a></div>
+    <p>The school and its register provider are responsible for the data held in the register. Their own privacy information applies to it.</p>
 
-    <h2>3. Core App Data</h2>
-    <p>Depending on the institutional system and feature used, the App may process:</p>
+    <h2>3. School Register and Core App Data</h2>
+    <p>Depending on your school and the features you use, the App processes on your device and exchanges with the register:</p>
     <ul>
-      <li>usernames, account identifiers, credentials, session tokens and server information;</li>
-      <li>grades, evaluations, absences, timetables, examinations, assignments and calendar entries;</li>
-      <li>messages, notices, educational documents and files;</li>
-      <li>profile, school, class, teacher, course or subject information;</li>
-      <li>locally cached data, settings, downloaded files and account configuration.</li>
+      <li>usernames, passwords, a second factor where used, and session data;</li>
+      <li>grades, evaluations, absences including reasons that may concern health, timetables, tests, homework and calendar entries;</li>
+      <li>messages, notices, documents and files;</li>
+      <li>profile, school, class, teacher and subject information.</li>
     </ul>
-    <p>Authentication information is used to establish and maintain the requested connection to the institutional service. Where stored locally, platform-appropriate storage mechanisms are used where technically available.</p>
+    <p>Unsaved credentials and session cookies stay in memory for the session. Saved credentials are kept in the secure storage of the device.</p>
+    <p><strong>School notifications.</strong> If you turn them on for an account, the App checks the register in the background with the saved login and shows local notifications. This runs directly between your device and the register. No push service is involved.</p>
+    <p><strong>Calendar, files and exports.</strong> Calendar sync (Android) writes the events you request to the device calendar you choose, and the calendar’s provider may sync them. Downloads and PDF, CSV or ZIP exports are saved where you choose. These copies are under your control.</p>
 
-    <h2>4. Optional Privacy Choices</h2>
+    <h2>4. Local Storage</h2>
+    <p>Settings, privacy choices, notes, reminders, widgets data and, where enabled, register caches stay on your device. Android app backup is disabled. Other operating-system backups may exist separately.</p>
+
+    <h2>5. App Announcements</h2>
+    <p>While the App is open, it requests <code>https://api.digitalesregister.com/api/v1/notifications</code> about every 5 minutes. The interval comes from the server and varies randomly by about 10 percent. The App also checks when you return to it after at least a minute, and it waits longer after errors. This works without login and does not depend on any consent.</p>
+    <p><strong>What the App sends:</strong> the platform, the app version without the build number, the language and technical values for paging and caching (limit, cursor, ETag), plus the connection data of any HTTPS request (IP address, user agent). It sends no account, school or grade data, no device identifier and no advertising ID. There is no account, no push provider (no APNs, no FCM), no tracking and no advertising.</p>
+    <p><strong>What the server keeps:</strong> in normal operation nothing. The IP address is held in memory only, to limit requests, and there is no access log. Only on a server error (HTTP status 5xx) does the web server write the IP address, the requested address with parameters and the request headers, without cookies, to the system log, which is deleted after 15 days at the latest.</p>
+    <p><strong>On your device:</strong> read status, hidden announcements and unread content are stored on the device only and are not sent to the server. They stay after logout. Read status is removed once an announcement has not been listed for 180 days; hidden announcements stay recorded until you delete the app data. If you turn off saving of data, no content is cached.</p>
+    <p>The App has no switch to turn off these requests; they stop when you close or uninstall it. The feature does not exist on macOS.</p>
+    <div class="notice"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR. Our legitimate interest is informing users of the App about its operation and security. You can object at any time (Art. 21 GDPR).</div>
+
+    <h2>6. Infrastructure: Cloudflare and Oracle</h2>
+    <p>Requests to api.digitalesregister.com, like those to the website, run through <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA (DNS, proxy and CDN, TLS termination, DDoS protection). Because encryption ends at Cloudflare, Cloudflare sees IP addresses, request headers and the requests themselves.</p>
+    <p>According to Cloudflare, it is a processor for customer logs and a controller for other personal data. Cloudflare states that it primarily stores data in the United States and the European Economic Area, so a transfer outside the EU is possible. As safeguards Cloudflare names its certification under the EU-U.S. Data Privacy Framework and, should that lapse, standard contractual clauses. Responses carry Cloudflare headers for Network Error Logging, with which supporting browsers can report connection errors to Cloudflare. Details: <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Cloudflare privacy policy</a> (4 November 2025), <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer">Data Processing Addendum</a> (version 6.4, 3 April 2026), <a href="https://www.cloudflare.com/gdpr/subprocessors/cloudflare-services/" rel="noopener noreferrer">sub-processors</a>.</p>
+    <p>The server is a virtual machine on <strong>Oracle Cloud Infrastructure</strong> (Always Free) in the Milan region, Italy (eu-milan-1). According to Oracle, it acts as a processor. For transfers from the European Economic Area, Oracle names binding corporate rules for processors or standard contractual clauses, and the EU-U.S. Data Privacy Framework. Details: <a href="https://www.oracle.com/legal/privacy/services-privacy-policy/" rel="noopener noreferrer">Oracle Services Privacy Policy</a>, <a href="https://www.oracle.com/contracts/cloud-services/" rel="noopener noreferrer">Oracle Data Processing Agreement</a>.</p>
+    <div class="notice"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR. Our legitimate interest is secure and reliable operation.</div>
+
+    <h2>7. Optional Privacy Choices</h2>
     <p>The App separates optional processing into three independent purposes:</p>
     <ul>
-      <li><strong>Diagnostics consent</strong> – Firebase Crashlytics for crashes and technical errors;</li>
-      <li><strong>Usage analytics consent</strong> – Google Analytics for Firebase for App-usage statistics;</li>
-      <li><strong>Academic statistics consent</strong> – additional pseudonymous school/grade statistics.</li>
+      <li><strong>Diagnostics</strong> – Firebase Crashlytics for crashes and technical errors;</li>
+      <li><strong>Usage analytics</strong> – Google Analytics for Firebase for usage statistics;</li>
+      <li><strong>Academic statistics</strong> – additional pseudonymous school and grade statistics.</li>
     </ul>
-    <p>These optional purposes are not required for the App's essential educational functionality. They are disabled until the required consent conditions are fulfilled. Users can reject all optional purposes, allow individual purposes and later withdraw them in the App's privacy settings.</p>
-    <p>The App stores the privacy version and privacy choices locally. It does not need a date of birth or exact age for this purpose.</p>
+    <p>All three are off until you allow them, and the App works without them. You can allow them one by one and withdraw them later under Settings &gt; Privacy &amp; Data. A decision for an older notice version does not count. The App stores the notice version and your choices locally.</p>
 
-    <h2>5. Google Analytics for Firebase</h2>
-    <p>On supported platforms, and only after valid usage-analytics consent, the App may use <strong>Google Analytics for Firebase</strong> to understand App usage and improve functionality.</p>
-    <p>Analytics may include allow-listed events, technical screen/feature identifiers, session information, App version, OS/device information supplied by the service, App language/theme and a locally generated pseudonymous user ID.</p>
-    <p>The analytics user ID is random. It is not a username, email address, school account ID or a hash of such data. A person using multiple devices may therefore be counted as multiple pseudonymous users.</p>
-    <p>The App does <strong>not intentionally send</strong> names, emails, usernames, passwords, tokens, cookies, individual grades, subjects, teachers, school names, messages, homework text, absence reasons, health information, free text, full URLs with identifiers/query parameters, precise GPS data, Wi-Fi SSID/BSSID or advertising identifiers added by the App.</p>
-    <p>Google Signals, user-provided-data features, personalized advertising, remarketing and Google Ads conversion optimization are not used for this App. Advertising-related consent signals are kept denied. Detailed location/device reporting is disabled in the Analytics configuration.</p>
-    <div class="notice"><strong>Legal basis:</strong> Usage Analytics is based on consent under Art. 6(1)(a) GDPR. Consent is voluntary and can be withdrawn with effect for the future.</div>
+    <h2>8. Google Analytics for Firebase</h2>
+    <p>Only after usage-analytics consent, and on Android and iOS, the App sends fixed screen and feature names, actions, load, login and sync results, filters, semester, language, theme and a locally generated pseudonymous user ID. Firebase adds its own technical data such as sessions, app version, operating system and device type.</p>
+    <p>The analytics user ID is random, one per locally saved account and installation. It contains no name, email address or credentials. A person on several devices may be counted several times. These data are <strong>pseudonymous, not anonymous</strong>.</p>
+    <p>The App does <strong>not send</strong> names, email addresses, usernames, passwords, tokens, cookies, individual grades, subjects, teachers, school names, messages, homework text, absence reasons, health information, free text, full URLs, precise location, Wi-Fi names or advertising identifiers.</p>
+    <p>Advertising-related consent signals stay denied and advertising-ID collection is disabled in the App. Google Signals, personalized advertising, remarketing and user-provided data are not used.</p>
+    <div class="notice"><strong>Legal basis:</strong> consent, Art. 6(1)(a) GDPR.</div>
 
-    <h2>6. Pseudonymous Academic Statistics</h2>
-    <p>Academic statistics require separate academic-statistics consent <strong>and</strong> usage-analytics consent. They are not sent in demo mode.</p>
-    <p>The App may send only:</p>
+    <h2>9. Pseudonymous Academic Statistics</h2>
+    <p>These require separate consent <strong>and</strong> usage-analytics consent, and they are not sent in demo mode. The App sends only:</p>
     <ul>
       <li>academic year and semester;</li>
-      <li>the overall locally calculated grade average, rounded to one decimal place and transmitted as integer tenths;</li>
-      <li>bucketed numbers of grades and subjects;</li>
-      <li>a technical snapshot-schema version;</li>
+      <li>the overall grade average calculated on the device, reduced to one decimal place;</li>
+      <li>ranges for the number of grades and subjects;</li>
+      <li>a technical schema version;</li>
       <li>a stable internal school identifier such as <code>school_0001</code>, where the school can be mapped unambiguously.</li>
     </ul>
-    <p>School names, individual grades, subjects, teachers, comments, examination names and other educational content are not sent as academic-statistics events. These data are <strong>pseudonymous, not anonymous</strong>.</p>
-    <div class="notice"><strong>Legal basis:</strong> Academic statistics are based on separate consent under Art. 6(1)(a) GDPR.</div>
+    <p>School names, individual grades, subjects, teachers, comments and absences are not sent. The contribution is linked to your pseudonymous ID. Published school groups need at least 30 different pseudonymous IDs. These data are <strong>pseudonymous, not anonymous</strong>.</p>
+    <div class="notice"><strong>Legal basis:</strong> separate consent, Art. 6(1)(a) GDPR.</div>
 
-    <h2>7. Firebase Crashlytics</h2>
-    <p>On supported platforms, and only after valid diagnostics consent, the App may use <strong>Firebase Crashlytics</strong> to identify crashes and technical errors.</p>
-    <p>Crashlytics may process crash reports, stack traces, App/OS version, device type/architecture, technical App state, Firebase/Crashlytics installation identifiers and controlled technical logs/custom keys.</p>
-    <p>The App is designed not to intentionally include passwords, tokens, individual grades, school names, messages, absence reasons, free text or other educational content in crash reports.</p>
-    <p>Google states that Crashlytics keeps crash stack traces, processed crash/minidump data and associated identifiers for <strong>90 days</strong> before beginning removal from live and backup systems.</p>
-    <div class="notice"><strong>Legal basis:</strong> Diagnostics is based on consent under Art. 6(1)(a) GDPR.</div>
+    <h2>10. Firebase Crashlytics</h2>
+    <p>Only after diagnostics consent, and on Android and iOS, the App uses <strong>Firebase Crashlytics</strong> to find crashes and technical errors. It processes crash reports, stack traces, app and operating-system version, device type, technical app state, installation identifiers and fixed technical log entries.</p>
+    <p>Passwords, tokens, grades, school names, messages, absence reasons and free text are not included. No identifier of your school account is set.</p>
+    <div class="notice"><strong>Legal basis:</strong> consent, Art. 6(1)(a) GDPR.</div>
 
-    <h2>8. Platform-Specific Behaviour</h2>
-    <h3>Android</h3>
-    <p>Firebase Analytics and Crashlytics may be used after the respective consent has been granted. Collection is designed to remain disabled before consent.</p>
+    <h2>11. Platforms</h2>
+    <p><strong>Android and iOS:</strong> Firebase Analytics and Crashlytics run only after the respective consent. The App does not ask for App Tracking Transparency permission and does not use advertising identifiers.</p>
+    <p><strong>Microsoft Windows and Linux:</strong> the App collects no Firebase diagnostics or analytics. The optional purposes have no effect there.</p>
 
-    <h3>iOS</h3>
-    <p>Where the iOS version is distributed and Firebase is correctly configured, the same consent rules apply. The App does not request App Tracking Transparency permission merely for the Firebase setup described here and does not intentionally use IDFA for advertising or cross-app tracking.</p>
+    <h2>12. Children and Adolescents</h2>
+    <p>The App is used by pupils and by their parents. It does not ask for an age. Core functions do not depend on optional consent, and all optional purposes are off until someone turns them on.</p>
+    <p>In Italy, a person can give consent to such services alone from the age of 14 (Art. 2-quinquies D.Lgs. 196/2003). Younger users should leave the optional purposes off unless a parent or guardian agrees. The App cannot check this.</p>
 
-    <h3>Microsoft Windows</h3>
-    <p>Firebase states that its Flutter support on Windows is not intended for production use. The App therefore treats Firebase Analytics and Crashlytics as unavailable/no-op telemetry on production Windows builds unless a supported production implementation is introduced later. Essential App functionality does not depend on Firebase telemetry.</p>
-
-    <h2>9. Children and Adolescents</h2>
-    <p>The App may be used by children and adolescents. For the optional consent-based telemetry model in Italy, the App asks only whether the user is <strong>14 years or older</strong>.</p>
-    <p>If the user is under 14, or age eligibility is unknown, optional Analytics, Crashlytics and academic-statistics processing remains disabled because the App currently does not provide a parent/legal-guardian authorization flow for those optional purposes.</p>
-    <p>This rule concerns the App's optional consent-based processing and does not mean that every processing operation concerning a person under 14 is prohibited. Educational institutions may process school data under different legal bases and responsibilities.</p>
-
-    <h2>10. Purposes and Legal Bases</h2>
+    <h2>13. Purposes and Legal Bases</h2>
     <ul>
-      <li>core App functions: connecting to the requested institutional service and displaying requested educational information;</li>
-      <li>optional diagnostics: consent, Art. 6(1)(a) GDPR;</li>
-      <li>optional usage analytics: consent, Art. 6(1)(a) GDPR;</li>
-      <li>optional academic statistics: separate consent, Art. 6(1)(a) GDPR.</li>
+      <li>core functions: you request them, the data stays between your device and the register, and the school determines the legal basis of the register itself;</li>
+      <li>app announcements and infrastructure: legitimate interest, Art. 6(1)(f) GDPR;</li>
+      <li>diagnostics, usage analytics, academic statistics: consent, Art. 6(1)(a) GDPR.</li>
     </ul>
-    <p>For core processing, the applicable legal basis depends on the relevant service relationship. Processing independently determined by an educational institution is subject to the legal basis determined by that institution.</p>
+    <p>You are not obliged to provide data. Without login data the register cannot be used, and without connection data announcements cannot be delivered. There is no automated decision-making and no profiling with legal or similar effect.</p>
 
-    <h2>11. Recipients</h2>
-    <h3>Google Firebase / Google Analytics</h3>
-    <div class="card">
-      <strong>Google Ireland Limited</strong><br />
-      Gordon House<br />
-      Barrow Street<br />
-      Dublin 4<br />
-      Ireland
-    </div>
-    <p>Depending on platform and consent, relevant services may include Google Analytics for Firebase and Firebase Crashlytics. Firebase Performance Monitoring is not part of this telemetry setup.</p>
-    <p>The App also communicates with the relevant educational institution and/or service infrastructure required for the requested school functionality.</p>
+    <h2>14. Recipients</h2>
+    <p>The register of your school receives what is needed for login and register functions. Cloudflare and Oracle process the announcement requests as described above. With the respective consent, Google processes the optional data:</p>
+    <div class="card"><strong>Google Ireland Limited</strong><br />
+      Gordon House, Barrow Street<br />
+      Dublin 4, Ireland</div>
+    <p>According to Google, it is generally a processor for Firebase, while Google Analytics has separate terms. Details: <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase privacy and security</a>. We do not sell data and use no advertising networks. Beyond these recipients, we pass on data only where the law requires it.</p>
 
-    <h2>12. International Transfers</h2>
-    <p>Some service providers may process information outside the European Economic Area. Where personal data is transferred to a third country, the transfer is subject to the safeguards applicable to the relevant provider and transfer, such as an adequacy decision, the EU-U.S. Data Privacy Framework where applicable, Standard Contractual Clauses or another recognized transfer mechanism.</p>
+    <h2>15. International Transfers</h2>
+    <p>Firebase processing may take place outside the European Economic Area. For transfers to the United States, Google names the EU-U.S. Data Privacy Framework. An EU BigQuery dataset does not guarantee EU-only processing for all Firebase services. For Cloudflare and Oracle see the section on infrastructure.</p>
 
-    <h2>13. Retention</h2>
-    <h3>Local App Data</h3>
-    <p>Local App data may remain until logout/account removal, deletion through available App or operating-system functions, clearing App data, or uninstallation. Files saved outside the App's private storage may need to be deleted separately.</p>
+    <h2>16. Retention</h2>
+    <ul>
+      <li><strong>Local data:</strong> until you delete it, the cache is replaced or the account is removed. There is no uniform period.</li>
+      <li><strong>Announcement requests:</strong> not stored in normal operation; system log entries after a server error are deleted after 15 days at the latest.</li>
+      <li><strong>Google Analytics:</strong> set to 14 months, renewed on new activity. This does not automatically apply to all aggregate reports.</li>
+      <li><strong>BigQuery:</strong> analytics event data may be exported daily to a dataset in the <strong>European Union</strong> and is deleted after 14 months at the latest. Advertising-ID export and the separate user-data export are off.</li>
+      <li><strong>Crashlytics:</strong> Google states 90 days before removal from live and backup systems begins.</li>
+      <li><strong>School register:</strong> determined by the school and its register provider.</li>
+    </ul>
 
-    <h3>Google Analytics</h3>
-    <p>The Google Analytics property is configured with a <strong>14-month</strong> user/event data-retention setting for data to which that setting applies.</p>
+    <h2>17. Withdrawal</h2>
+    <p>You can change or withdraw your choices under Settings &gt; Privacy &amp; Data. Withdrawal applies to the future. The App stops the collection, clears the analytics ID and properties it set, resets local analytics data and deletes unsent crash reports where supported. Data already transmitted is not deleted automatically.</p>
 
-    <h3>BigQuery</h3>
-    <p>Analytics event data may be exported daily to Google BigQuery in the <strong>European Union (EU)</strong>. Advertising-ID export and the separate Analytics user-data export are disabled. BigQuery retention is technically separate from the GA4 retention setting. The operator's policy for exported Analytics event data is a maximum of <strong>14 months</strong>; the BigQuery dataset/table expiration configuration must be maintained separately to enforce this maximum.</p>
+    <h2>18. Your Rights</h2>
+    <p>You have the right of access, rectification, erasure, restriction and data portability (Arts. 15 to 20 GDPR), the right to object (Art. 21 GDPR) and the right to withdraw consent. Write to <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>. We use your address and message only to answer you; the mailbox is hosted by Google. Please do not send passwords or health data.</p>
+    <p>Because announcement requests carry no account and analytics IDs are pseudonymous, we often cannot link data to a person by name.</p>
+    <p>You can complain to the supervisory authority: Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rome, <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">www.garanteprivacy.it</a>.</p>
 
-    <h3>Crashlytics</h3>
-    <p>Google states a 90-day retention period for the Crashlytics data described above before the removal process begins.</p>
+    <h2>19. Account and Data Deletion</h2>
+    <p>The App creates no account of its own. Deleting local data does not delete your school account. How to remove local data and how to ask for deletion is described on the <a href="delete-account.html">deletion page</a> (German). Requests about official school records go to your school.</p>
 
-    <h3>Institutional Data</h3>
-    <p>Retention periods for data stored on educational institution servers are determined by the relevant institution or service provider.</p>
+    <h2>20. Platform Providers and External Links</h2>
+    <p>Google Play, the Apple App Store, the Microsoft Store and other distribution channels may process data about downloads and updates under their own rules. Links to PayPal for voluntary donations, to GitHub and to other external pages open services with their own privacy rules. This page is delivered through GitHub Pages; GitHub processes connection data under its <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">privacy statement</a>.</p>
 
-    <h2>14. Withdrawal and Deletion</h2>
-    <p>Users may change or withdraw optional privacy choices in the App's privacy settings. Withdrawal takes effect for future optional processing.</p>
-    <p>When Analytics consent is withdrawn, the App is designed to stop future Analytics collection, clear the App-set Analytics user ID/properties and reset local Analytics state where supported. This does not itself guarantee deletion of already transmitted server-side data.</p>
-    <p>When academic-statistics consent is withdrawn, future academic-statistics events and the school analytics identifier are disabled/removed from the App's Analytics context. When diagnostics consent is withdrawn, future Crashlytics collection is disabled and, where supported, unsent local crash reports are deleted.</p>
-
-    <h2>15. GDPR Rights</h2>
-    <p>Where the App operator acts as controller for the relevant processing, users may have rights of access, rectification, erasure, restriction, data portability where applicable, objection where applicable, withdrawal of consent, and complaint to a supervisory authority under Arts. 15–21 and 77 GDPR.</p>
-    <p>Requests concerning processing for which the App operator is responsible can be sent to <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>. In Italy, users may also contact the <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Garante per la protezione dei dati personali</a>.</p>
-
-    <h2>16. Account and Data Deletion</h2>
-    <p>Digitales Register generally connects to an account managed by the relevant school or institutional server rather than creating an independent school account controlled by the App operator. Deleting local App data therefore does not automatically delete the underlying institutional account.</p>
-    <p>Requests concerning personal data independently controlled by the App operator may be sent to the contact address above. Requests concerning official educational records should generally be directed to the responsible educational institution.</p>
-
-    <h2>17. Platform Providers</h2>
-    <p>The App may be distributed through Google Play / Android, Apple App Store / iOS, and Microsoft Store or other distribution channels / Microsoft Windows. The relevant platform provider may independently process information related to downloading, installing, updating or using applications through its platform.</p>
-
-    <h2>18. Changes</h2>
-    <p>This Privacy Policy may be updated when the App, third-party services, legal requirements or processing practices change. Where a material change requires a new consent decision, an older optional consent is not silently treated as consent to the changed purpose.</p>
-
-    <h2>19. Contact</h2>
-    <div class="card">
-      <strong>Tobias Bucci</strong><br />
-      Mühlenweg 51, St. Sigmund<br />
-      39030 Kiens (BZ), Italy<br /><br />
-      Email: <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
-    </div>
-    <p><strong>Privacy version:</strong> 4<br /><strong>Effective date:</strong> 1 October 2026</p>
+    <h2>21. Changes</h2>
+    <p>If an optional purpose changes, the App asks for a new decision. An older consent is not treated as consent to the changed purpose.</p>
+    <ul>
+      <li><strong>Version 5 (7 November 2026):</strong> added app announcements, Cloudflare and Oracle; removed the age question; added languages. The optional purposes are unchanged.</li>
+      <li><strong>Version 4 (1 October 2026):</strong> separate consents for diagnostics, usage analytics and academic statistics.</li>
+    </ul>
   </article>
 
   <footer class="footer">© 2026 Digitales Register · Privacy Policy</footer>
