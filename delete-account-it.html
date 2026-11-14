@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eliminare account e dati: Digitales Register (app e web app)" />
+  <title>Digitales Register – Eliminare account e dati</title>
+  <style>
+    :root{--bg:#f5f7fb;--surface:#fff;--text:#1f2937;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--warn:#fff7ed;--warn-border:#fed7aa;--shadow:0 8px 28px rgba(15,23,42,.07);--radius:18px}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+    main{width:min(900px,calc(100% - 32px));margin:48px auto;padding:42px 46px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    h1{margin-top:0;line-height:1.2}h2{margin-top:38px;line-height:1.3}p{margin:0 0 16px}li{margin:6px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .box,.notice,.warning{margin:18px 0;padding:18px 20px;border:1px solid var(--border);border-radius:14px;background:#fafafa}.notice{background:var(--soft);border-color:#dbeafe}.warning{background:var(--warn);border-color:var(--warn-border)}.muted{color:var(--muted)}
+    @media(max-width:680px){main{width:min(100% - 20px,900px);margin:20px auto;padding:26px 22px;border-radius:14px}}
+    @media print{body{background:#fff}main{width:100%;margin:0;border:0;box-shadow:none}}
+    .languages{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0 0 24px;padding:0;list-style:none}.languages a[aria-current]{font-weight:700;color:var(--text)}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Digitales Register – Eliminare account e dati</h1>
+  <nav aria-label="Lingua">
+    <ul class="languages">
+      <li><a href="delete-account.html" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="delete-account-it.html" lang="it" aria-current="page">Italiano</a></li>
+      <li><a href="delete-account-lld.html" lang="lld" hreflang="lld">Ladin</a></li>
+      <li><a href="delete-account-en.html" lang="en" hreflang="en">English</a></li>
+    </ul>
+  </nav>
+
+  <p>Questa pagina descrive come chiedere la cancellazione dei dati e come rimuovere i dati locali dell’app. Vale per l’app su Android, iOS, Microsoft Windows e Linux e per la web app su app.digitalesregister.com.</p>
+
+  <div class="notice"><strong>Importante:</strong> l’app è un client indipendente e non ufficiale di terze parti per il registro scolastico su digitalesregister.it. Il progetto non ha alcun legame con la Provincia autonoma di Bolzano – Alto Adige, le Direzioni Istruzione e Formazione, le scuole o Informatica Alto Adige S.p.A. (SIAG) e non è da questi né autorizzato né sostenuto. Il tuo account scolastico è gestito dalla tua scuola; eliminare l’app o i dati locali dell’app non lo cancella.</div>
+
+  <h2>1. Richiesta di cancellazione al gestore dell’app</h2>
+  <div class="box">
+    <ol>
+      <li>Invia un’e-mail a <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>.</li>
+      <li>Usa possibilmente come oggetto: <strong>«Cancellazione dati – Digitales Register»</strong>.</li>
+      <li>Descrivi brevemente la tua richiesta. Poiché il gestore dell’app non conserva account scolastici, nomi utente né nomi reali, i dati statistici o diagnostici pseudonimi conservati sui server (se hai acconsentito alla loro raccolta) possono essere attribuiti ai sensi dell’art. 11, par. 2, GDPR solo se indichi il relativo identificativo tecnico della tua installazione dell’app o se la richiesta si riferisce alla tua precedente corrispondenza via e-mail.</li>
+    </ol>
+  </div>
+  <p>L’app mostra l’identificativo tecnico in Impostazioni &gt; Privacy e dati («Identificativo tecnico per richieste privacy»), dove puoi copiarlo. La web app non raccoglie dati statistici o diagnostici.</p>
+
+  <div class="warning"><strong>Non inviare mai via e-mail:</strong> password, nome utente del tuo account scolastico, token di accesso, cookie di sessione, singoli voti, contenuti di messaggi, motivi di assenza, informazioni sanitarie o altri contenuti scolastici riservati. Se servono ulteriori dati per verificare l’identità, verranno richiesti separatamente.</div>
+
+  <h2>2. Panoramica: dati presso il gestore dell’app e dati locali dell’app</h2>
+  <p>I dati locali dell’app esistono solo sul tuo dispositivo o nel tuo browser; li rimuovi tu stesso (punto 4). Il gestore dell’app può cancellare solo dati sui propri sistemi:</p>
+  <ul>
+    <li>le e-mail che hai inviato all’indirizzo di contatto;</li>
+    <li>i dati pseudonimi di Google Analytics for Firebase e della loro esportazione in BigQuery, se hai acconsentito alla loro raccolta e se possono essere attribuiti tramite l’identificativo pseudonimo.</li>
+  </ul>
+  <p>Il server degli avvisi e il proxy della web app non conservano nulla che sia attribuito a una persona.</p>
+
+  <h2>3. Dati e account sul server della scuola</h2>
+  <p>Account utente, voti ufficiali, assenze, orari, messaggi e altri dati scolastici sono gestiti dalla rispettiva scuola, istituzione formativa o dal relativo gestore del server.</p>
+  <p>Di questi dati è responsabile la scuola o il gestore del server. Il gestore di Digitales Register non può cancellarli lì; rivolgiti direttamente alla tua scuola.</p>
+
+  <h2>4. Rimuovere i dati locali dal dispositivo o dal browser</h2>
+  <p>A seconda dell’uso, sono presenti in locale:</p>
+  <ul>
+    <li>configurazioni degli account;</li>
+    <li>credenziali e dati di sessione salvati;</li>
+    <li>dati del registro nella cache;</li>
+    <li>impostazioni e preferenze;</li>
+    <li>impostazioni sulla privacy e sui consensi;</li>
+    <li>stati e identificativi Analytics pseudonimi locali.</li>
+  </ul>
+  <p>Come rimuoverli:</p>
+  <ul>
+    <li><strong>App:</strong> disconnettersi dall’account o usare le funzioni di cancellazione locali dell’app, cancellare i dati dell’app nelle impostazioni del sistema operativo, se la piattaforma lo consente, oppure disinstallare l’app;</li>
+    <li><strong>Web app:</strong> disconnettersi – ciò cancella i cookie di sessione nonché la password e i dati del registro salvati per quell’account – e, per tutto il resto, cancellare nel browser i dati del sito app.digitalesregister.com.</li>
+  </ul>
+  <p>I file salvati espressamente in una cartella di download, di documenti o in un’altra cartella accessibile all’utente restano dopo la disconnessione o la disinstallazione e devono eventualmente essere cancellati a mano.</p>
+
+  <h2>5. Analytics, statistiche scolastiche e sui voti e Crashlytics</h2>
+  <p>Google Analytics for Firebase, le statistiche scolastiche e sui voti e Firebase Crashlytics sono legati a consensi separati e senza consenso non vengono raccolti. La web app non li usa.</p>
+  <p>Alla revoca l’app interrompe la raccolta futura, rimuove l’identificativo Analytics da essa impostato, reimposta gli stati Analytics locali ed elimina, ove supportato, i rapporti di arresto non ancora inviati. La revoca però <strong>non cancella automaticamente in modo retroattivo</strong> i dati già trasmessi.</p>
+  <p>I dati Analytics sono trattati in forma pseudonima. Poiché l’identificativo non è formato di proposito da nome, indirizzo e-mail o nome utente scolastico, i dati già trasmessi non possono essere trovati in base al nome di una persona, ma solo tramite l’identificativo tecnico (punto 1).</p>
+
+  <h2>6. Tempi di conservazione</h2>
+  <p>Per Google Analytics è impostata una durata di conservazione di <strong>14 mesi</strong>, con rinnovo in caso di nuova attività. I dati sugli eventi di Analytics possono essere esportati ogni giorno in un dataset BigQuery nell’<strong>Unione europea</strong>; questi dati vengono cancellati al più tardi dopo <strong>14 mesi</strong>.</p>
+  <p>Per Firebase Crashlytics Google indica di conservare i dati degli arresti anomali e i relativi identificativi per <strong>90 giorni</strong> prima di avviarne la rimozione dai sistemi attivi e di backup.</p>
+  <p>Presso il server degli avvisi non esiste un account né nulla che sia attribuito a una persona. Nel funzionamento normale le richieste non vengono conservate; le voci del registro di sistema dopo un errore del server vengono cancellate al più tardi dopo <strong>15 giorni</strong>. Il proxy della web app non conserva nulla.</p>
+  <p>E-mail e richieste in materia di privacy: le e-mail all’indirizzo di contatto (fornito tramite Gmail da Google Ireland Limited / Google LLC, Stati Uniti, certificata ai sensi dell’EU-U.S. Data Privacy Framework; base giuridica art. 6, par. 1, lett. b), c) e f) GDPR) vengono cancellate entro 30 giorni dalla conclusione della richiesta, salvo che una conservazione più lunga sia necessaria per dimostrare, come richiesto dalla legge, la corretta gestione di una richiesta in materia di privacy (art. 6, par. 1, lett. c) e f) GDPR).</p>
+  <p>Per i dati sui server scolastici valgono i termini della scuola responsabile o del suo fornitore di servizi.</p>
+
+  <h2>7. Tempi di risposta alle richieste in materia di privacy</h2>
+  <p>Le richieste in materia di privacy vengono trattate senza ingiustificato ritardo, al più tardi entro un mese dal ricevimento (art. 12, par. 3, GDPR).</p>
+  <p>Se necessario per la complessità o il numero delle richieste, questo termine può essere prorogato di altri due mesi al massimo. Della proroga e dei suoi motivi informiamo entro il primo mese.</p>
+
+  <h2>8. Minori</h2>
+  <p>L’app non chiede né l’età né un documento. Chi attiva una finalità facoltativa conferma di avere almeno 14 anni o il consenso di chi esercita la responsabilità genitoriale. Le richieste di cancellazione per i minori possono essere presentate anche dai genitori o dai tutori. I dettagli sono nell’<a href="it.html">informativa sulla privacy dell’app</a>.</p>
+
+  <p>Queste pagine informative sulla privacy vengono distribuite tramite GitHub Pages (GitHub, Inc., Stati Uniti / GitHub B.V., Paesi Bassi) sulla base dell’art. 6, par. 1, lett. f) GDPR (messa a disposizione delle informazioni obbligatorie per legge); GitHub è certificata ai sensi dell’EU-U.S. Data Privacy Framework e tratta i dati di connessione secondo la propria <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">informativa sulla privacy</a>.</p>
+
+  <h2>9. Contatto</h2>
+  <p>
+    <strong>Tobias Bucci</strong><br />
+    Mühlenweg 51, St. Sigmund<br />
+    39030 Kiens (BZ), Italia<br /><br />
+    E-mail: <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
+  </p>
+
+  <div class="notice"><strong>Versioni linguistiche:</strong> questa pagina è disponibile in tedesco, italiano, ladino e inglese. Fa fede la versione tedesca; in caso di discordanze tra le versioni linguistiche prevale la versione tedesca.</div>
+
+  <p class="muted">Aggiornata: 14 novembre 2026 · Versione privacy 5 · <a href="it.html">informativa sulla privacy dell’app</a></p>
+</main>
+</body>
+</html>

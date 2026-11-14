@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Delete account and data: Digitales Register (app and web app)" />
+  <title>Digitales Register – Delete account and data</title>
+  <style>
+    :root{--bg:#f5f7fb;--surface:#fff;--text:#1f2937;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--warn:#fff7ed;--warn-border:#fed7aa;--shadow:0 8px 28px rgba(15,23,42,.07);--radius:18px}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+    main{width:min(900px,calc(100% - 32px));margin:48px auto;padding:42px 46px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    h1{margin-top:0;line-height:1.2}h2{margin-top:38px;line-height:1.3}p{margin:0 0 16px}li{margin:6px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .box,.notice,.warning{margin:18px 0;padding:18px 20px;border:1px solid var(--border);border-radius:14px;background:#fafafa}.notice{background:var(--soft);border-color:#dbeafe}.warning{background:var(--warn);border-color:var(--warn-border)}.muted{color:var(--muted)}
+    @media(max-width:680px){main{width:min(100% - 20px,900px);margin:20px auto;padding:26px 22px;border-radius:14px}}
+    @media print{body{background:#fff}main{width:100%;margin:0;border:0;box-shadow:none}}
+    .languages{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0 0 24px;padding:0;list-style:none}.languages a[aria-current]{font-weight:700;color:var(--text)}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Digitales Register – Delete account and data</h1>
+  <nav aria-label="Language">
+    <ul class="languages">
+      <li><a href="delete-account.html" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="delete-account-it.html" lang="it" hreflang="it">Italiano</a></li>
+      <li><a href="delete-account-lld.html" lang="lld" hreflang="lld">Ladin</a></li>
+      <li><a href="delete-account-en.html" lang="en" aria-current="page">English</a></li>
+    </ul>
+  </nav>
+
+  <p>This page describes how to request the deletion of data and how to remove local app data. It applies to the app on Android, iOS, Microsoft Windows and Linux and to the web app at app.digitalesregister.com.</p>
+
+  <div class="notice"><strong>Important:</strong> the app is an independent, unofficial third-party client for the school register at digitalesregister.it. The project is in no way affiliated with the Autonomous Province of Bolzano – South Tyrol, the education directorates, the schools or Südtiroler Informatik AG (SIAG), and is neither authorised nor supported by them. Your school account is managed by your school; deleting the app or local app data does not delete it.</div>
+
+  <h2>1. Deletion request to the app’s operator</h2>
+  <div class="box">
+    <ol>
+      <li>Send an email to <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>.</li>
+      <li>If possible, use the subject: <strong>“Delete data – Digitales Register”</strong>.</li>
+      <li>Briefly describe your request. Because the app’s operator stores no school accounts, user names or real names, pseudonymous statistics or diagnostics data stored on servers (if you consented to their collection) can only be linked to you under Art. 11(2) GDPR if you state the corresponding technical ID of your app installation or if the request refers to your earlier email correspondence.</li>
+    </ol>
+  </div>
+  <p>The app shows the technical ID under Settings &gt; Privacy &amp; data (“Technical ID for privacy requests”), where you can copy it. The web app collects no statistics or diagnostics data.</p>
+
+  <div class="warning"><strong>Never send by email:</strong> your password, the user name of your school account, access tokens, session cookies, individual grades, message content, reasons for absence, health information or other confidential school content. If further information is needed to verify your identity, it will be requested separately.</div>
+
+  <h2>2. Overview: data held by the app’s operator vs. local app data</h2>
+  <p>Local app data exist only on your device or in your browser; you remove them yourself (point 4). The app’s operator can only delete data on his own systems:</p>
+  <ul>
+    <li>emails you have sent to the contact address;</li>
+    <li>pseudonymous data in Google Analytics for Firebase and its export to BigQuery, if you consented to their collection and they can be linked through the pseudonymous ID.</li>
+  </ul>
+  <p>The notification server and the web app’s proxy store nothing that is linked to a person.</p>
+
+  <h2>3. Data and accounts on the school server</h2>
+  <p>User accounts, official grades, absences, timetables, messages and other school records are managed by the school, educational institution or the server operator concerned.</p>
+  <p>The school or the server operator is responsible for these data. The operator of Digitales Register cannot delete them there; please contact your school directly.</p>
+
+  <h2>4. Remove local data from the device or browser</h2>
+  <p>Depending on your use, the following are stored locally:</p>
+  <ul>
+    <li>account configurations;</li>
+    <li>saved credentials and session data;</li>
+    <li>cached register data;</li>
+    <li>settings and preferences;</li>
+    <li>privacy and consent settings;</li>
+    <li>local pseudonymous Analytics states and IDs.</li>
+  </ul>
+  <p>How to remove them:</p>
+  <ul>
+    <li><strong>App:</strong> sign out of the account or use the app’s local deletion functions, clear the app data in the operating system’s settings where the platform supports it, or uninstall the app;</li>
+    <li><strong>Web app:</strong> sign out – this deletes the session cookies and the stored password and register data of that account – and, for everything else, clear the site data of app.digitalesregister.com in your browser.</li>
+  </ul>
+  <p>Files that were explicitly saved to a download, documents or other user-accessible folder remain after signing out or uninstalling and may have to be deleted manually.</p>
+
+  <h2>5. Analytics, school and grade statistics and Crashlytics</h2>
+  <p>Google Analytics for Firebase, the school and grade statistics and Firebase Crashlytics are tied to separate consents and are not collected without consent. The web app does not use them.</p>
+  <p>On withdrawal, the app stops future collection, removes the Analytics ID it set, resets local Analytics states and, where supported, deletes crash reports not yet sent. Withdrawal does <strong>not automatically delete retroactively</strong> data already transmitted.</p>
+  <p>Analytics data are processed pseudonymously. Because the ID is deliberately not derived from a name, email address or school user name, data already transmitted cannot be found by a person’s name, only through the technical ID (point 1).</p>
+
+  <h2>6. Retention periods</h2>
+  <p>Google Analytics is set to a retention period of <strong>14 months</strong>, renewed on new activity. Analytics event data may be exported daily to a BigQuery dataset in the <strong>European Union</strong>; these data are deleted after <strong>14 months</strong> at the latest.</p>
+  <p>For Firebase Crashlytics, Google states that it keeps crash data and related identifiers for <strong>90 days</strong> before removal from live and backup systems begins.</p>
+  <p>The notification server has no account and nothing linked to a person. Requests are not stored in normal operation; system log entries after a server error are deleted after <strong>15 days</strong> at the latest. The web app’s proxy stores nothing.</p>
+  <p>Email and privacy requests: emails to the contact address (provided through Gmail by Google Ireland Limited / Google LLC, USA, certified under the EU-U.S. Data Privacy Framework; legal basis Art. 6(1)(b), (c) and (f) GDPR) are deleted within 30 days after the request has been fully handled, unless longer retention is needed as legally required proof that a privacy request was handled properly (Art. 6(1)(c) and (f) GDPR).</p>
+  <p>Data on school servers are subject to the periods of the responsible school or its service provider.</p>
+
+  <h2>7. Time limit for privacy requests</h2>
+  <p>Privacy requests are handled without undue delay, at the latest within one month of receipt (Art. 12(3) GDPR).</p>
+  <p>Where necessary because of the complexity or number of requests, this period may be extended by up to two further months. We inform you of an extension and its reasons within the first month.</p>
+
+  <h2>8. Minors</h2>
+  <p>The app asks for neither age nor ID. Whoever switches on an optional purpose confirms being at least 14 years old or having the consent of their parents or guardians. Deletion requests for minors can also be made by parents or guardians. Details are in the <a href="index.html">app privacy policy</a>.</p>
+
+  <p>These privacy and information pages are served through GitHub Pages (GitHub, Inc., USA / GitHub B.V., Netherlands) on the basis of Art. 6(1)(f) GDPR (providing legally required information); GitHub is certified under the EU-U.S. Data Privacy Framework and processes connection data under its <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">privacy statement</a>.</p>
+
+  <h2>9. Contact</h2>
+  <p>
+    <strong>Tobias Bucci</strong><br />
+    Mühlenweg 51, St. Sigmund<br />
+    39030 Kiens (BZ), Italy<br /><br />
+    Email: <a href="mailto:buccitobias774@gmail.com">buccitobias774@gmail.com</a>
+  </p>
+
+  <div class="notice"><strong>Language versions:</strong> this page is available in German, Italian, Ladin and English. The German version is authoritative; in case of discrepancies between language versions, the German version prevails.</div>
+
+  <p class="muted">Last updated: 14 November 2026 · Privacy version 5 · <a href="index.html">app privacy policy</a></p>
+</main>
+</body>
+</html>
