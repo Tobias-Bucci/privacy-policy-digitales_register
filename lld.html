@@ -24,7 +24,7 @@
   <header class="hero">
     <span class="eyebrow">Digitales Register</span>
     <h1>Declaraziun de proteziun dles dades dl’App</h1>
-    <p class="muted">Por Android, iOS, Microsoft Windows, Linux y la web app · Versciun 5 · Ajorné ai 7 de novëmber 2026, revedüda ai 14 de novëmber 2026</p>
+    <p class="muted">Por Android, iOS, Microsoft Windows, Linux y la web app · Versciun 5 · Ajorné ai 7 de novëmber 2026, revedüda ai 16 de novëmber 2026</p>
     <nav aria-label="Lingaz">
       <ul class="languages">
       <li><a href="index.html" lang="en" hreflang="en">English</a></li>
@@ -70,6 +70,14 @@
     <p><strong>Sön to aparat:</strong> stat de letöra, comunicaziuns ascognüdes y contignüs nia lis vëgn salvá ma sön l’aparat y ne vëgn nia trasmetüs al server. Ai resta ince do le logout. Le stat de letöra vëgn osté sce na comunicaziun n’é nia plü stada listada por 180 dis; les comunicaziuns ascognüdes resta notades fin che te scancelëies les dades dl’app. Sce te desativëies le salvamënt dles dades, ne vëgn degun contignü salvé tla cache.</p>
     <p>L’App n’á degun interutur por desativé chëstes domandes; ares finësc canche te stlüjes o desinstalëies l’App. Sön macOS ne n’él nia chësta funziun. Le medem vala por la web app; ilò finësc les domandes canche te stlüjes le tab.</p>
     <div class="notice"><strong>Base giuridica:</strong> art. 6, par. 1, let. f) GDPR. Nosc interes legitim inderogabl é d’informé i utënć dl’App sön mudaziuns importantes por la segurëza y le funzionamënt. Deache les domandes vëgn fates zënza account y zënza identificaziun dl aparat (art. 11 GDPR), po na oposiziun aladô dl art. 21 GDPR gnì metüda en pratica tecnicamënter ma stlujan o desinstalan l’App.</div>
+
+    <h2>5a. Enresciudes</h2>
+    <p>Dala versciun 2.0.0 inant po na comunicaziun dl’App contigni n’enrescida. Vodé é liber, ne adora degun login y ne depënn da degüna autorisaziun. La medema enrescida é söla plata da vodé www.digitalesregister.com/umfrage/…; por chëra vala la declaraziun de proteziun dles dades dl sit.</p>
+    <p><strong>Ci che l’App manda:</strong> ma canche te vodëies, la resposta tuta fora y na <strong>identificaziun casuala dl’instalaziun</strong> (UUID), che l’App fej da sé al pröm vot, a <code>https://api.digitalesregister.com/api/v1/polls/…/vote</code>, y les dades de conesciun de vigni domanda HTTPS (adressa IP, user agent). L’identificaziun ne vëgn nia dedüta da carateristiches dl aparat, n’é degüna ID de reclam y ne vëgn nia mandada canche an mostra n’enrescida. Ara é na identificaziun permanënta y pseudonima de chësta instalaziun.</p>
+    <p><strong>Ci che le server tëgn:</strong> nia l’identificaziun, ma por vigni enrescida ma n valur hash fat cun na tla secreta (HMAC-SHA-256) y la resposta tuta fora, zënza ora y zënza adressa IP. Insciö vëgnel cunté n vot por aparat y i vosc de d’atres enresciudes ne po nia gnì coliá. I valurs hash y i vosc singui vëgn scancelá 14 dis do la fin dl’enrescida; ma les somes por resposta resta.</p>
+    <p><strong>Sön to aparat:</strong> l’identificaziun y, por vigni enrescida, la resposta tuta fora, aciochè l’App mostres tüa tlüta ince offline. Ares resta pro le logout y vëgn scancelades cun les dades dl’App.</p>
+    <p><strong>Limitaziuns:</strong> na instalaziun nöia o dades dl’App scancelades fej na identificaziun nöia, y tl’App y tl browser pon vodé desvalis. I resultac conta porchël aparac, nia porsones.</p>
+    <div class="notice"><strong>Base giuridica:</strong> art. 6, par. 1, let. f) GDPR. Nost interès legitim é de tó sö opiniuns informales di adoradus y de limité i vosc dopli. Deache le server ne conësc nia l’identificaziun, ne podun en regola nia assegné n vot a na porsona (art. 11 GDPR).</div>
 
     <h2>6. Infrastrotöra: Cloudflare y Oracle</h2>
     <p>Les domandes a api.digitalesregister.com va, sciöche chëres al sit, sura <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA (DNS, proxy y CDN, terminaziun TLS, proteziun DDoS). Deache la codificaziun finësc pro Cloudflare, vëiga Cloudflare adresses IP, intestaziuns y les domandes instësses. Sura Cloudflare va ince la web app y so proxy (seziun 6a).</p>
@@ -184,6 +192,7 @@
     <h2>21. Mudaziuns</h2>
     <p>Sce n fin opzional se müda, damanda l’App indô. Na autorizaziun plü vedla ne vala nia por le fin mudé.</p>
     <ul>
+      <li><strong>Revijiun di 16 de novëmber 2026 (versciun 5):</strong> enresciudes (seziun 5a): identificaziun casuala dl’instalaziun, mandada ma canche an vodëia. I fins opzionai resta compagn; les dezijiuns de denant vala inant.</li>
       <li><strong>Revijiun di 14 de novëmber 2026 (versciun 5):</strong> web app y so proxy, conferma dl’eté pro l’ativaziun di fins opzionai, identificaziun tecnica por domandes de proteziun dles dades, conservaziun di e-mails, ocajiuns de segurëza de Cloudflare, degöna liaziun cun autorités y scores, versciuns de lingaz. I fins opzionai resta instësc; les dezijiuns fates resta valides.</li>
       <li><strong>Versciun 5 (7 de novëmber 2026):</strong> injontá comunicaziuns dl’App, Cloudflare y Oracle, osté la domanda sön la eté, injontá lingac. I fins opzionai resta instësc.</li>
       <li><strong>Versciun 4 (1 d’otober 2026):</strong> autorizaziuns separades por diagnostica, analisa de adoraziun y statistiches dla scora y dles notes.</li>

@@ -24,7 +24,7 @@
   <header class="hero">
     <span class="eyebrow">Digitales Register</span>
     <h1>App privacy policy</h1>
-    <p class="muted">For Android, iOS, Microsoft Windows, Linux and the web app · Privacy version 5 · Effective 7 November 2026, revised 14 November 2026</p>
+    <p class="muted">For Android, iOS, Microsoft Windows, Linux and the web app · Privacy version 5 · Effective 7 November 2026, revised 16 November 2026</p>
     <nav aria-label="Language">
       <ul class="languages">
       <li><a href="index.html" lang="en" aria-current="page">English</a></li>
@@ -70,6 +70,14 @@
     <p><strong>On your device:</strong> read status, hidden announcements and unread content are stored on the device only and are not sent to the server. They stay after logout. Read status is removed once an announcement has not been listed for 180 days; hidden announcements stay recorded until you delete the app data. If you turn off saving of data, no content is cached.</p>
     <p>The App has no switch to turn off these requests; they stop when you close or uninstall it. The feature does not exist on macOS. The same applies to the web app; there the requests stop when you close the tab.</p>
     <div class="notice"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR. Our compelling legitimate interest is to inform the App’s users about changes relevant to security and operation. Because the requests are made without an account or device identifier (Art. 11 GDPR), an objection under Art. 21 GDPR can technically only be implemented by closing or uninstalling the App.</div>
+
+    <h2>5a. Polls</h2>
+    <p>From version 2.0.0, an App announcement may contain a poll. Voting is optional, needs no login and does not depend on any consent. The same poll is available on the voting page www.digitalesregister.com/umfrage/…, which is covered by the website’s privacy policy.</p>
+    <p><strong>What the App sends:</strong> only when you vote, the chosen answer and a <strong>random installation ID</strong> (UUID) that the App creates itself on the first vote, to <code>https://api.digitalesregister.com/api/v1/polls/…/vote</code>, plus the connection data of any HTTPS request (IP address, user agent). The ID is not derived from any device property, is not an advertising ID and is not sent when a poll is shown. It is a persistent, pseudonymous identifier of this installation.</p>
+    <p><strong>What the server keeps:</strong> not the ID, but for each poll only a hash computed with a secret key (HMAC-SHA-256) and the chosen answer, without a time and without an IP address. This way one vote per device counts, and votes in different polls cannot be linked. Hashes and individual votes are deleted 14 days after the poll ends; only the totals per answer remain.</p>
+    <p><strong>On your device:</strong> the ID and, for each poll, your chosen answer, so that the App shows your choice offline too. They are kept when you sign out and deleted with the App data.</p>
+    <p><strong>Limits:</strong> reinstalling or deleting the App data creates a new ID, and the App and a browser can each vote. Results therefore count devices, not people.</p>
+    <div class="notice"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR. Our legitimate interest is to gather informal opinions from users and to limit repeated votes. Because the server does not know the ID, we generally cannot link a vote to a person (Art. 11 GDPR).</div>
 
     <h2>6. Infrastructure: Cloudflare and Oracle</h2>
     <p>Requests to api.digitalesregister.com, like those to the website, run through <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA (DNS, proxy and CDN, TLS termination, DDoS protection). Because encryption ends at Cloudflare, Cloudflare sees IP addresses, request headers and the requests themselves. The web app and its proxy also run through Cloudflare (section 6a).</p>
@@ -184,6 +192,7 @@
     <h2>21. Changes</h2>
     <p>If an optional purpose changes, the App asks for a new decision. An older consent is not treated as consent to the changed purpose.</p>
     <ul>
+      <li><strong>Revision of 16 November 2026 (version 5):</strong> polls (section 5a): a random installation ID that is sent only when voting. The optional purposes are unchanged; earlier decisions remain valid.</li>
       <li><strong>Revision of 14 November 2026 (version 5):</strong> web app and its proxy, age confirmation when switching on optional purposes, technical ID for privacy requests, retention of emails, Cloudflare security events, no affiliation with public bodies and schools, language versions. The optional purposes are unchanged; existing choices remain valid.</li>
       <li><strong>Version 5 (7 November 2026):</strong> added app announcements, Cloudflare and Oracle; removed the age question; added languages. The optional purposes are unchanged.</li>
       <li><strong>Version 4 (1 October 2026):</strong> separate consents for diagnostics, usage analytics and academic statistics.</li>

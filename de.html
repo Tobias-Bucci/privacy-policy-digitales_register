@@ -24,7 +24,7 @@
   <header class="hero">
     <span class="eyebrow">Digitales Register</span>
     <h1>Datenschutzerklärung der App</h1>
-    <p class="muted">Für Android, iOS, Microsoft Windows, Linux und die Web-App · Datenschutzversion 5 · Stand 7. November 2026, überarbeitet am 14. November 2026</p>
+    <p class="muted">Für Android, iOS, Microsoft Windows, Linux und die Web-App · Datenschutzversion 5 · Stand 7. November 2026, überarbeitet am 16. November 2026</p>
     <nav aria-label="Sprache">
       <ul class="languages">
       <li><a href="index.html" lang="en" hreflang="en">English</a></li>
@@ -70,6 +70,14 @@
     <p><strong>Auf deinem Gerät:</strong> Gelesen-Status, ausgeblendete Mitteilungen und ungelesene Inhalte werden nur auf dem Gerät gespeichert und nicht an den Server übertragen. Sie bleiben nach dem Abmelden erhalten. Der Gelesen-Status wird entfernt, wenn eine Mitteilung 180 Tage lang nicht mehr gemeldet wurde; ausgeblendete Mitteilungen bleiben vermerkt, bis du die App-Daten löschst. Wenn du das Speichern von Daten ausschaltest, werden keine Inhalte zwischengespeichert.</p>
     <p>Die App hat keinen Schalter, um diese Abfragen abzustellen; sie enden, wenn du die App schließt oder deinstallierst. Auf macOS gibt es die Funktion nicht. In der Web-App gilt dasselbe; dort enden die Abfragen, wenn du den Tab schließt.</p>
     <div class="notice"><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 Buchst. f DSGVO. Unser zwingendes berechtigtes Interesse ist es, die Nutzer der App über sicherheits- und betriebsrelevante Änderungen zu informieren. Da die Abfragen ohne Konto oder Gerätekennung erfolgen (Art. 11 DSGVO), kann ein Widerspruch nach Art. 21 DSGVO technisch nur durch das Schließen oder Deinstallieren der App umgesetzt werden.</div>
+
+    <h2>5a. Umfragen</h2>
+    <p>Ab Version 2.0.0 kann eine App-Mitteilung eine Umfrage enthalten. Abstimmen ist freiwillig, braucht keine Anmeldung und hängt von keiner Einwilligung ab. Dieselbe Umfrage gibt es auf der Abstimmungsseite www.digitalesregister.com/umfrage/…; dafür gilt die Datenschutzerklärung der Website.</p>
+    <p><strong>Was die App sendet:</strong> nur wenn du abstimmst, die gewählte Antwort und eine <strong>zufällige Installationskennung</strong> (UUID), die die App beim ersten Abstimmen selbst erzeugt, an <code>https://api.digitalesregister.com/api/v1/polls/…/vote</code>, dazu die Verbindungsdaten jeder HTTPS-Anfrage (IP-Adresse, User-Agent). Die Kennung wird aus keinen Gerätemerkmalen abgeleitet, ist keine Werbe-ID und wird beim Anzeigen einer Umfrage nicht gesendet. Sie ist eine dauerhafte, pseudonyme Kennung dieser Installation.</p>
+    <p><strong>Was der Server behält:</strong> nicht die Kennung, sondern pro Umfrage nur einen mit einem geheimen Schlüssel gebildeten Hashwert (HMAC-SHA-256) und die gewählte Antwort, ohne Zeitpunkt und ohne IP-Adresse. So zählt pro Gerät eine Stimme, und Stimmen verschiedener Umfragen lassen sich nicht verknüpfen. Hashwerte und Einzelstimmen werden 14 Tage nach dem Ende der Umfrage gelöscht; nur die Summen je Antwort bleiben.</p>
+    <p><strong>Auf deinem Gerät:</strong> die Kennung und, pro Umfrage, deine gewählte Antwort, damit die App deine Wahl auch offline anzeigt. Sie bleiben beim Abmelden erhalten und werden mit den App-Daten gelöscht.</p>
+    <p><strong>Grenzen:</strong> Eine Neuinstallation oder gelöschte App-Daten erzeugen eine neue Kennung, und in der App und im Browser kann getrennt abgestimmt werden. Ergebnisse zählen daher Geräte, nicht Personen.</p>
+    <div class="notice"><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse ist es, informelle Meinungsbilder der Nutzer einzuholen und Mehrfachstimmen zu begrenzen. Weil der Server die Kennung nicht kennt, können wir eine Stimme in der Regel keiner Person zuordnen (Art. 11 DSGVO).</div>
 
     <h2>6. Infrastruktur: Cloudflare und Oracle</h2>
     <p>Anfragen an api.digitalesregister.com laufen wie die an die Website über <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA (DNS, Proxy und CDN, TLS-Terminierung, DDoS-Schutz). Weil die Verschlüsselung bei Cloudflare endet, sieht Cloudflare IP-Adressen, Anfrage-Header und die Anfragen selbst. Über Cloudflare laufen auch die Web-App und ihr Proxy (Abschnitt 6a).</p>
@@ -184,6 +192,7 @@
     <h2>21. Änderungen</h2>
     <p>Ändert sich ein optionaler Zweck, fragt die App neu. Eine ältere Einwilligung gilt nicht für den geänderten Zweck.</p>
     <ul>
+      <li><strong>Überarbeitung vom 16. November 2026 (Version 5):</strong> Umfragen (Abschnitt 5a): zufällige Installationskennung, die nur beim Abstimmen gesendet wird. Die optionalen Zwecke sind unverändert; bisherige Entscheidungen gelten weiter.</li>
       <li><strong>Überarbeitung vom 14. November 2026 (Version 5):</strong> Web-App und ihr Proxy, Bestätigung des Alters beim Einschalten optionaler Zwecke, technische Kennung für Datenschutzanfragen, Aufbewahrung von E-Mails, Sicherheitsereignisse von Cloudflare, keine Verbindung zu Behörden und Schulen, Sprachfassungen. Die optionalen Zwecke sind unverändert; bisherige Entscheidungen gelten weiter.</li>
       <li><strong>Version 5 (7. November 2026):</strong> App-Mitteilungen, Cloudflare und Oracle ergänzt, Altersabfrage entfernt, Sprachen ergänzt. Die optionalen Zwecke sind unverändert.</li>
       <li><strong>Version 4 (1. Oktober 2026):</strong> getrennte Einwilligungen für Fehlerdiagnose, Nutzungsanalyse und Schul- und Notenstatistik.</li>

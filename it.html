@@ -24,7 +24,7 @@
   <header class="hero">
     <span class="eyebrow">Digitales Register</span>
     <h1>Informativa sulla privacy dell’app</h1>
-    <p class="muted">Per Android, iOS, Microsoft Windows, Linux e la web app · Versione privacy 5 · In vigore dal 7 novembre 2026, aggiornata il 14 novembre 2026</p>
+    <p class="muted">Per Android, iOS, Microsoft Windows, Linux e la web app · Versione privacy 5 · In vigore dal 7 novembre 2026, aggiornata il 16 novembre 2026</p>
     <nav aria-label="Lingua">
       <ul class="languages">
       <li><a href="index.html" lang="en" hreflang="en">English</a></li>
@@ -70,6 +70,14 @@
     <p><strong>Sul tuo dispositivo:</strong> lo stato di lettura, gli avvisi nascosti e i contenuti non letti sono memorizzati solo sul dispositivo e non vengono trasmessi al server. Restano dopo la disconnessione. Lo stato di lettura viene rimosso quando un avviso non è più elencato per 180 giorni; gli avvisi nascosti restano annotati finché non elimini i dati dell’app. Se disattivi il salvataggio dei dati, nessun contenuto viene memorizzato nella cache.</p>
     <p>L’App non ha un interruttore per disattivare queste richieste; terminano quando chiudi o disinstalli l’App. Su macOS la funzione non esiste. Lo stesso vale per la web app; lì le richieste terminano quando chiudi la scheda.</p>
     <div class="notice"><strong>Base giuridica:</strong> art. 6, par. 1, lett. f) GDPR. Il nostro legittimo interesse cogente è informare gli utenti dell’App sulle modifiche rilevanti per la sicurezza e il funzionamento. Poiché le richieste avvengono senza account né identificatore del dispositivo (art. 11 GDPR), un’opposizione ai sensi dell’art. 21 GDPR può essere attuata tecnicamente solo chiudendo o disinstallando l’App.</div>
+
+    <h2>5a. Sondaggi</h2>
+    <p>Dalla versione 2.0.0 un avviso dell’App può contenere un sondaggio. Votare è facoltativo, non richiede l’accesso e non dipende da alcun consenso. Lo stesso sondaggio si trova sulla pagina di voto www.digitalesregister.com/umfrage/…, per la quale vale l’informativa del sito.</p>
+    <p><strong>Cosa invia l’App:</strong> solo quando voti, la risposta scelta e un <strong>identificativo casuale dell’installazione</strong> (UUID), che l’App genera da sé al primo voto, a <code>https://api.digitalesregister.com/api/v1/polls/…/vote</code>, oltre ai dati di connessione di ogni richiesta HTTPS (indirizzo IP, user agent). L’identificativo non è ricavato da caratteristiche del dispositivo, non è un ID pubblicitario e non viene inviato quando si visualizza un sondaggio. È un identificativo persistente e pseudonimo di questa installazione.</p>
+    <p><strong>Cosa conserva il server:</strong> non l’identificativo, ma per ogni sondaggio solo un valore hash calcolato con una chiave segreta (HMAC-SHA-256) e la risposta scelta, senza orario e senza indirizzo IP. Così conta un voto per dispositivo e i voti di sondaggi diversi non possono essere collegati. Valori hash e singoli voti vengono cancellati 14 giorni dopo la fine del sondaggio; restano solo i totali per risposta.</p>
+    <p><strong>Sul tuo dispositivo:</strong> l’identificativo e, per ogni sondaggio, la risposta scelta, perché l’App mostri la tua scelta anche offline. Restano quando esci dall’account e vengono cancellati con i dati dell’App.</p>
+    <p><strong>Limiti:</strong> una nuova installazione o la cancellazione dei dati dell’App generano un nuovo identificativo, e nell’App e nel browser si può votare separatamente. I risultati contano quindi dispositivi, non persone.</p>
+    <div class="notice"><strong>Base giuridica:</strong> art. 6, par. 1, lett. f) GDPR. Il nostro legittimo interesse è raccogliere opinioni informali degli utenti e limitare i voti multipli. Poiché il server non conosce l’identificativo, di norma non possiamo attribuire un voto a una persona (art. 11 GDPR).</div>
 
     <h2>6. Infrastruttura: Cloudflare e Oracle</h2>
     <p>Le richieste a api.digitalesregister.com, come quelle al sito, passano attraverso <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA (DNS, proxy e CDN, terminazione TLS, protezione DDoS). Poiché la cifratura termina presso Cloudflare, Cloudflare vede indirizzi IP, intestazioni e le richieste stesse. Attraverso Cloudflare passano anche la web app e il suo proxy (sezione 6a).</p>
@@ -184,6 +192,7 @@
     <h2>21. Modifiche</h2>
     <p>Se una finalità facoltativa cambia, l’App chiede una nuova decisione. Un consenso precedente non vale per la finalità modificata.</p>
     <ul>
+      <li><strong>Aggiornamento del 16 novembre 2026 (versione 5):</strong> sondaggi (sezione 5a): identificativo casuale dell’installazione, inviato solo quando si vota. Le finalità facoltative sono invariate; le decisioni precedenti restano valide.</li>
       <li><strong>Aggiornamento del 14 novembre 2026 (versione 5):</strong> web app e relativo proxy, conferma dell’età all’attivazione delle finalità facoltative, identificativo tecnico per le richieste privacy, conservazione delle e-mail, eventi di sicurezza di Cloudflare, assenza di legami con enti pubblici e scuole, versioni linguistiche. Le finalità facoltative sono invariate; le decisioni già prese restano valide.</li>
       <li><strong>Versione 5 (7 novembre 2026):</strong> aggiunti avvisi dell’App, Cloudflare e Oracle, rimossa la domanda sull’età, aggiunte lingue. Le finalità facoltative sono invariate.</li>
       <li><strong>Versione 4 (1 ottobre 2026):</strong> consensi separati per diagnostica, analisi d’uso e statistiche scolastiche e sui voti.</li>
